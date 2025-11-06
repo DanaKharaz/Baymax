@@ -6,4 +6,84 @@
     android:layout_height="match_parent"
     tools:context=".SuggestActivity">
 
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <Button
+            android:id="@+id/btnfirstword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Training data"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="10dp"
+            app:cornerRadius="0dp"/>
+
+        <Button
+            android:id="@+id/btnsecondword"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Samples"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="10dp"
+            app:cornerRadius="0dp"/>
+
+        <Button
+            android:id="@+id/btnthird"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Labelled data"
+            android:textSize="30sp"
+            android:textAllCaps="false"
+            android:layout_marginVertical="10dp"
+            app:cornerRadius="0dp"/>
+
+        <Button
+            android:id="@+id/btnStop"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:text="STOP"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageButton
+                android:id="@+id/btnPass"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cancle_pass"
+                android:background="@null"
+                android:contentDescription="Cancel Pass"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:layout_marginEnd="40dp"/>
+
+            <ImageButton
+                android:id="@+id/btnRegenerate"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/regenerate"
+                android:background="@null"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:contentDescription="Regenerate"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
