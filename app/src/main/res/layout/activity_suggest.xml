@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SuggestActivity">
+    tools:context=".SuggestActivity"
+    android:background="@color/grey">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -21,7 +22,11 @@
             android:textSize="30sp"
             android:textAllCaps="false"
             android:layout_marginVertical="10dp"
-            app:cornerRadius="0dp"/>
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@android:color/black"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="3dp"/>
 
         <Button
             android:id="@+id/btnsecondword"
@@ -31,7 +36,11 @@
             android:textSize="30sp"
             android:textAllCaps="false"
             android:layout_marginVertical="10dp"
-            app:cornerRadius="0dp"/>
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@android:color/black"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="3dp"/>
 
         <Button
             android:id="@+id/btnthird"
@@ -41,13 +50,18 @@
             android:textSize="30sp"
             android:textAllCaps="false"
             android:layout_marginVertical="10dp"
-            app:cornerRadius="0dp"/>
+            app:cornerRadius="0dp"
+            android:backgroundTint="@color/grey"
+            android:textColor="@android:color/black"
+            app:strokeColor="@android:color/black"
+            app:strokeWidth="3dp"/>
 
         <Button
             android:id="@+id/ListeningStopBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="100dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
             android:backgroundTint="@color/clear"
             android:insetLeft="10dp"
             android:insetTop="10dp"
@@ -85,7 +99,7 @@
                 android:contentDescription="Cancel Pass"
                 android:scaleType="fitCenter"
                 android:adjustViewBounds="true"
-                android:layout_marginEnd="40dp"/>
+                android:layout_marginEnd="60dp"/>
 
             <ImageButton
                 android:id="@+id/btnRegenerate"
