@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListeningActivity"
-    android:background="@color/grey">
+    android:background="@color/ui_bg">
 
     <TextView
         android:id="@+id/ListeningLabelTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:text="LISTENING..."
-        android:textColor="@color/black"
+        android:text="LISTENING"
+        android:fontFamily="monospace"
+        android:textColor="@color/text_primary"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,7 +26,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="[time placeholder]"
-        android:textColor="@color/black"
+        android:fontFamily="monospace"
+        android:textColor="@color/text_primary"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,6 +43,7 @@
         android:insetRight="10dp"
         android:insetBottom="10dp"
         android:text="STOP"
+        android:fontFamily="monospace"
         android:textSize="30sp"
         android:paddingLeft="30dp"
         android:paddingRight="30dp"
