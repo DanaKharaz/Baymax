@@ -45,7 +45,7 @@
             app:strokeWidth="3dp"/>
 
         <Button
-            android:id="@+id/btnthird"
+            android:id="@+id/btnthirdword"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:text="Labelled data"
