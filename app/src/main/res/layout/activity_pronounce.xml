@@ -5,81 +5,108 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ListeningActivity"
-    android:background="@color/grey">
-
-    <Button
-        android:id="@+id/listeningStopBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="100dp"
-        android:backgroundTint="@color/clear"
-        android:insetLeft="10dp"
-        android:insetTop="10dp"
-        android:insetRight="10dp"
-        android:insetBottom="10dp"
-        android:paddingLeft="30dp"
-        android:paddingTop="10dp"
-        android:paddingRight="30dp"
-        android:paddingBottom="10dp"
-        android:text="STOP"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/red"
-        android:textSize="30sp"
-        app:cornerRadius="7dp"
-        app:iconPadding="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:strokeColor="@color/red"
-        app:strokeWidth="3dp" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="365dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="64dp"
+    android:background="@color/ui_bg">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
         android:gravity="center"
-        android:text="Simultaneously"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="24dp">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="365dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:text="Simultaneously"
+            android:fontFamily="monospace"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="365dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:text="ˌsaɪ.məlˈteɪ.ni.əs.li"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="365dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="ˌsaɪ.məlˈteɪ.ni.əs.li"
+            android:textColor="@color/text_primary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="365dp"
-        android:layout_height="47dp"
-        android:layout_marginTop="80dp"
-        android:gravity="center"
-        android:text="사이멀테니어슬리"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="365dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="사이멀테니어슬리"
+            android:textColor="@color/text_primary"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <ImageButton
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:scaleType="fitCenter"
-        android:layout_marginTop="80dp"
-        android:src="@drawable/baseline_volume_up_24"
-        android:background="?attr/selectableItemBackgroundBorderless"
-        android:contentDescription="Volume up"
-        app:tint="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/baseline_volume_up_24"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Volume up"
+            app:tint="#EAEDEF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+
+        <Button
+            android:id="@+id/ListeningStopBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:backgroundTint="@color/clear"
+            android:insetLeft="10dp"
+            android:insetTop="10dp"
+            android:insetRight="10dp"
+            android:insetBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:text="STOP"
+            android:fontFamily="monospace"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
+            android:textSize="30sp"
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/red"
+            app:strokeWidth="3dp" />
+
+        <ImageButton
+            android:id="@+id/btnPass"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:adjustViewBounds="true"
+            android:background="@null"
+            android:contentDescription="Cancel Pass"
+            android:scaleType="fitCenter"
+            android:src="@drawable/cancle_pass"
+            app:tint="@color/grey" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
