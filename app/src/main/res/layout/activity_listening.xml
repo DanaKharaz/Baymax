@@ -6,4 +6,57 @@
     android:layout_height="match_parent"
     tools:context=".ListeningActivity">
 
+    <TextView
+        android:id="@+id/ListeningLabelTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LISTENING..."
+        android:textSize="20sp"
+        tools:layout_editor_absoluteX="147dp"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <TextView
+        android:id="@+id/ListeningTimeTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:27"
+        tools:layout_editor_absoluteX="188dp"
+        tools:layout_editor_absoluteY="183dp" />
+
+    <Button
+        android:id="@+id/ListeningStopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:insetLeft="10dp"
+        android:insetTop="10dp"
+        android:insetRight="10dp"
+        android:insetBottom="10dp"
+        android:text="STOP"
+        android:textSize="30sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/clear"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/red"
+        app:cornerRadius="7dp"
+        app:iconPadding="0dp"
+        app:strokeColor="@color/red"
+        app:strokeWidth="3dp"/>
+
+    <TextView
+        android:id="@+id/ListeningWave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[wave placeholder]]"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
