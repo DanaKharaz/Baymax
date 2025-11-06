@@ -4,15 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/ui_bg">
 
-    <TextView
-        android:layout_width="wrap_content"
+
+    <LinearLayout
+        android:id="@+id/accountInfoContainer"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/userDetailsContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias="0.40">
+
+        <TextView
+            android:id="@+id/textViewAccountInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Information"
+            android:fontFamily="monospace"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/userDetailsContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rectangle"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/accountInfoContainer">
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: Minji"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary" />/>
+
+        <TextView
+            android:id="@+id/textViewLanguage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Native Language: Korean"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary" />/>
+
+        <TextView
+            android:id="@+id/textViewMajor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Major: Computer Science"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary" />/>
+
+        <TextView
+            android:id="@+id/textViewAge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Age: 22"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            android:textColor="@color/text_primary" />/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ListeningStopBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:insetLeft="10dp"
+        android:insetTop="10dp"
+        android:insetRight="10dp"
+        android:insetBottom="10dp"
+        android:text="START"
+        android:fontFamily="monospace"
+        android:textSize="30sp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:backgroundTint="@color/clear"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/lime"
+        app:cornerRadius="7dp"
+        app:iconPadding="0dp"
+        app:strokeColor="@color/lime"
+        app:strokeWidth="3dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
