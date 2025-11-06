@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".SuggestActivity">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
@@ -44,17 +44,31 @@
             app:cornerRadius="0dp"/>
 
         <Button
-            android:id="@+id/btnStop"
-            android:layout_width="220dp"
+            android:id="@+id/ListeningStopBtn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="@color/clear"
+            android:insetLeft="10dp"
+            android:insetTop="10dp"
+            android:insetRight="10dp"
+            android:insetBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingTop="10dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
             android:text="STOP"
-            android:textAllCaps="true"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@color/red"
             android:textSize="30sp"
-            android:backgroundTint="@android:color/holo_red_dark"
-            android:layout_marginTop="40dp"
-            android:layout_marginBottom="4dp"/>
+            app:cornerRadius="7dp"
+            app:iconPadding="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:strokeColor="@color/red"
+            app:strokeWidth="3dp" />
 
         <LinearLayout
             android:layout_width="wrap_content"
