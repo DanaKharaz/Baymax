@@ -66,6 +66,7 @@
             android:layout_marginTop="50dp"
             android:layout_marginBottom="30dp"
             android:backgroundTint="@color/clear"
+            android:fontFamily="monospace"
             android:insetLeft="10dp"
             android:insetTop="10dp"
             android:insetRight="10dp"
