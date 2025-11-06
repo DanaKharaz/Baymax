@@ -4,24 +4,32 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ListeningActivity">
+    tools:context=".ListeningActivity"
+    android:background="@color/grey">
 
     <TextView
         android:id="@+id/ListeningLabelTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:text="LISTENING..."
-        android:textSize="20sp"
-        tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="120dp" />
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/ListeningTimeTxt"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="01:27"
-        tools:layout_editor_absoluteX="188dp"
-        tools:layout_editor_absoluteY="183dp" />
+        android:layout_marginTop="20dp"
+        android:text="[time placeholder]"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListeningLabelTxt" />
 
     <Button
         android:id="@+id/ListeningStopBtn"
@@ -54,9 +62,11 @@
         android:id="@+id/ListeningWave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="[wave placeholder]]"
-        tools:layout_editor_absoluteX="142dp"
-        tools:layout_editor_absoluteY="299dp" />
+        android:text="[wave placeholder]"
+        app:layout_constraintBottom_toTopOf="@+id/ListeningStopBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ListeningTimeTxt" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
