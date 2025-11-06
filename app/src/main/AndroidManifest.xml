@@ -13,6 +13,18 @@
         android:theme="@style/Theme.Baymax"
         tools:targetApi="31">
         <activity
+            android:name=".PronounceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TranslateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SuggestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListeningActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
